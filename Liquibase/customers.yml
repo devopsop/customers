@@ -28,10 +28,10 @@ databaseChangeLog:
                   type: varchar(50)
 
         - sql:
-            sql: INSERT INTO customers values (1, 'Mathieu', 'Blackburn', 'Chicoutimi')
+            sql: INSERT INTO customers values (1, 'John', 'Doe', 'Chicoutimi')
         - sql:    
-            sql: INSERT INTO customers values (2, 'God', 'Father', 'Chicoutimi')
+            sql: INSERT INTO customers values (2, 'Roger', 'Fortin', 'Chicoutimi')
         - sql:    
-            sql: INSERT INTO customers values (3, 'Bobby', 'Fortin', 'Chicoutimi')
+            sql: INSERT INTO customers values (3, 'Just', 'Tim', 'Chicoutimi')
         - sql:    
-            sql: INSERT INTO customers values (4, 'Roger', 'Tremblay', 'Chicoutimi')
+            sql: INSERT INTO customers values (4, 'God', 'Father', 'Chicoutimi')
