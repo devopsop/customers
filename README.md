@@ -1,5 +1,6 @@
-# customers
-This is used for Tomcat and PostgreSQL. Queries will be done on the database newdb on the table customers for their first name / name / city and be displayed.
+# Customers
+Webapp for Tomcat. Queries will be done on the table customers of the database 'newdb'.
+
 # LiquiBase
 Use the command: ./liquibase --changeLogFile=customers.yml update.   
-Will create a table in the table: newdb and populate it.
+This will create a table 'customer' in 'newdb' and populate it.
