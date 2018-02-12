@@ -15,11 +15,11 @@
   <h2>Results</h2>
   
 <table>
-<tr><th>Prenom</th><th>Nom</th><th>Ville</th></tr>
+<tr><th>Prenom</th><th>Nom</th><th>Active</th></tr>
 <%
 String nom;
 String prenom;
-String ville;
+boolean active;
 
 	
 InitialContext cxt = new InitialContext();
@@ -36,7 +36,7 @@ Connection conn = ds.getConnection();
 Statement sqlStatement = conn.createStatement();
 
 // Generate the SQL query.
-String query = "select firstname, lastname, city from customers";
+String query = "select firstname, lastname, active from customers";
 
 
 // Get the query results and display them.
@@ -44,8 +44,10 @@ ResultSet sqlResult = sqlStatement.executeQuery(query);
 while(sqlResult.next()) {
 nom = sqlResult.getString("lastname");
 prenom = sqlResult.getString("firstname");
-ville = sqlResult.getString("city");
-out.println("<tr><td>" + prenom + "</td><td>" + nom + "</td><td>" + ville + "</td></tr>");
+active = sqlResult.getBoolean("active");
+
+
+out.println("<tr><td>" + prenom + "</td><td>" + nom + "</td><td>" + active + "</td></tr>");
 }
 
 // Close the connection.

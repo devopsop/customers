@@ -24,14 +24,14 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
-                  name: city
-                  type: varchar(50)
+                  name: active
+                  type: bool
 
         - sql:
-            sql: INSERT INTO customers values (1, 'John', 'Doe', 'Chicoutimi')
+            sql: INSERT INTO customers values (1, 'John', 'Doe', '0')
         - sql:    
-            sql: INSERT INTO customers values (2, 'Roger', 'Fortin', 'Chicoutimi')
+            sql: INSERT INTO customers values (2, 'Roger', 'Fortin', '1')
         - sql:    
-            sql: INSERT INTO customers values (3, 'Just', 'Tim', 'Chicoutimi')
+            sql: INSERT INTO customers values (3, 'Just', 'Tim', '1')
         - sql:    
-            sql: INSERT INTO customers values (4, 'God', 'Father', 'Chicoutimi')
+            sql: INSERT INTO customers values (4, 'God', 'Father', '1')
