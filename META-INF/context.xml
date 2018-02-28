@@ -31,7 +31,7 @@
             driverClassName="org.postgresql.Driver"
             username="devops" 
             password="devops"
-            url="jdbc:postgresql://postgres:5432/devops"
+            url="jdbc:postgresql://127.0.0.1:5432/devops"
             maxActive="5" 
             maxIdle="30" maxWait="10000" />
 
